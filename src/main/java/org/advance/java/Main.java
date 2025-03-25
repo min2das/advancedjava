@@ -14,7 +14,7 @@ public class Main {
         books.add(book2);
         books.add(book3);
 
-        Collections.sort(books);
+        Collections.sort(books, new MyComparator());
 
         for (Book book : books) {
             System.out.println(book.getTitle());

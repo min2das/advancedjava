@@ -1,6 +1,6 @@
 package org.advance.java;
 
-public class Book implements Comparable<Book>
+public class Book
 {
 
     int id;
@@ -27,10 +27,4 @@ public class Book implements Comparable<Book>
         return year;
     }
 
-
-
-    @Override
-    public int compareTo(Book o) {
-        return - this.id - o.id;
-    }
 }
